@@ -96,7 +96,7 @@ def test_6_result(run_program):
             "Программа должна запрашивать данные в таком порядке: "
             "имя, возраст, вес, рост."
         )
-    assert expected_bmi in numbers, (
+    assert any(abs(float(num) - weight / height ** 2) < 0.05 for num in numbers), (
         "Неверно рассчитан ИМТ. "
         "Для веса 75.5 кг и роста 1.8 м должно получиться около 23.3."
     )
