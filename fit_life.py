@@ -5,9 +5,11 @@ user_age = int(input("Cколько тебе лет? "))
 user_weight = float(input("Сколько ты весишь? "))
 user_height = float(input("Какой у тебя рост? (в метрах) "))
 
+
 def body_mass_index(user_weight, user_height):
     bmi = user_weight / user_height ** 2
     return round(bmi, 1)
+
 
 def water_needed(user_weight):
     water = user_weight * 30
