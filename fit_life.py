@@ -7,18 +7,21 @@ user_height = float(input("Какой у тебя рост? (в метрах) ")
 
 
 def body_mass_index(user_weight, user_height):
+    # функция считает коэффициент веса
     bmi = user_weight / user_height ** 2
     return round(bmi, 1)
 
 
 def water_needed(user_weight):
+    # функция считает количество воды
     water = user_weight * 30
     return round(water / 1000, 1)
+
 
 bmi = body_mass_index(user_weight, user_height)
 water_count = water_needed(user_weight)
 
-print("Отчет для пользователя:", user_name, user_age, 'лет.')
-print('Твой bmi:', bmi, ', а норма воды', water_count, 'л.')
+print('Отчет для пользователя:', user_name, user_age, 'лет.')
+print('Твой bmi:', bmi, 'норма воды', water_count, 'л.')
 print()
 print("Расчет окончен. Будьте здоровы!")
