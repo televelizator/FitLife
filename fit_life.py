@@ -6,14 +6,14 @@ user_weight = float(input("Сколько ты весишь? "))
 user_height = float(input("Какой у тебя рост? (в метрах) "))
 
 
-def body_mass_index(user_weight, user_height):
-    # функция считает коэффициент веса
+# функция считает коэффициент веса
+def body_mass_index(user_weight, user_height):  
     bmi = user_weight / user_height ** 2
     return round(bmi, 1)
 
 
+# функция считает количество воды
 def water_needed(user_weight):
-    # функция считает количество воды
     water = user_weight * 30
     return round(water / 1000, 1)
 
