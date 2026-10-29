@@ -24,5 +24,6 @@ bmi = body_mass_index(user_weight, user_height)
 water_count = water_needed(user_weight)
 
 print(f'Отчет для пользователя: {user_name} {user_age} лет.')
-print(f'Твой bmi: {bmi}, норма воды {water_count} л.\n')
+print(f'Твой bmi: {bmi}')
+print(f'Рекомендуемая норма воды: {water_count} л.\n')
 print('Расчет окончен. Будьте здоровы!')
