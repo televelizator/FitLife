@@ -25,4 +25,4 @@ water_count = water_needed(user_weight)
 
 print(f'Отчет для пользователя: {user_name} {user_age} лет.')
 print(f'Твой bmi: {bmi}, норма воды {water_count} л.\n')
-print(f"Расчет окончен. Будьте здоровы!")
+print('Расчет окончен. Будьте здоровы!')
