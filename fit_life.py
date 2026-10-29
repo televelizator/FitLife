@@ -9,8 +9,8 @@ user_height = float(input("Какой у тебя рост? (в метрах) ")
 # функция считает коэффициент веса
 def body_mass_index(user_weight, user_height):
     """В зависимости от веса и роста считает bmi."""
-    bmi = user_weight / user_height ** 2
-    return round(bmi, 1)
+    result = user_weight / user_height ** 2
+    return round(result, 1)
 
 
 # функция считает количество воды
