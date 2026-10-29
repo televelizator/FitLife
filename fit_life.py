@@ -23,7 +23,6 @@ def water_needed(user_weight):
 bmi = body_mass_index(user_weight, user_height)
 water_count = water_needed(user_weight)
 
-print('Отчет для пользователя:', user_name, user_age, 'лет.')
-print('Твой bmi:', bmi, 'норма воды', water_count, 'л.')
-print()
-print("Расчет окончен. Будьте здоровы!")
+print(f'Отчет для пользователя: {user_name} {user_age} лет.')
+print(f'Твой bmi: {bmi}, норма воды {water_count} л.\n')
+print(f"Расчет окончен. Будьте здоровы!")
