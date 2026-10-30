@@ -1,9 +1,10 @@
 # Проект FitLife - MVP версия 1.0
-
+WATER_PER_KG = 30
+MILLILITRES_PER_LITER = 1000
 user_name = input("Как тебя зовут? ")
 user_age = int(input("Cколько тебе лет? "))
-user_weight = float(input("Сколько ты весишь? "))
-user_height = float(input("Какой у тебя рост? (в метрах) "))
+user_weight = float(input("Сколько ты весишь? (используя точку: 75.5) "))
+user_height = float(input("Какой у тебя рост? (используя точку: 1.75) "))
 
 
 # функция считает коэффициент веса
@@ -16,8 +17,8 @@ def body_mass_index(user_weight, user_height):
 # функция считает количество воды
 def water_needed(user_weight):
     """В зависимости от веса считает воду."""
-    water = user_weight * 30
-    return round(water / 1000, 1)
+    water = user_weight * WATER_PER_KG
+    return round(water / MILLILITRES_PER_LITER, 1)
 
 
 bmi = body_mass_index(user_weight, user_height)
